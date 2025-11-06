@@ -84,12 +84,12 @@ export default function ContactPage() {
                             <div className="p-3 bg-primary/10 rounded-full"><Mail className="h-6 w-6 text-primary" /></div>
                             <div>
                                 <h3 className="text-lg font-semibold text-primary">Écrivez-nous</h3>
-                                <p className="text-muted-foreground">contact@Relaxvoyages.com</p>
+                                <p className="text-muted-foreground">contact@Assirikvoyages.com</p>
                             </div>
                         </div>
                         <div className="pt-6">
                             <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4657.009558633316!2d-17.47407872419299!3d14.755816773256319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec10d669d7a29c9%3A0xe337e7415e270852!2sRelax%20Voyages%20S%C3%A9n%C3%A9gal!5e1!3m2!1sfr!2ssn!4v1757549619150!5m2!1sfr!2ssn" 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4657.009558633316!2d-17.47407872419299!3d14.755816773256319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec10d669d7a29c9%3A0xe337e7415e270852!2sAssirik%20Voyages%20S%C3%A9n%C3%A9gal!5e1!3m2!1sfr!2ssn!4v1757549619150!5m2!1sfr!2ssn" 
                                 width="100%" 
                                 height="300" 
                                 style={{border:0}} 

@@ -19,7 +19,7 @@ export default function HomeAbout() {
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-primary font-headline">Votre Partenaire de Confiance pour des Voyages Sereins</h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              Avec plus de 20 ans d'expérience, Relax Voyages, basée à Dakar, est votre agence de confiance agréée IATA. Nous nous engageons à transformer chaque voyage en une expérience exceptionnelle et sans souci.
+              Avec plus de 20 ans d'expérience, Assirik Tours, basée à Dakar, est votre agence de confiance agréée IATA. Nous nous engageons à transformer chaque voyage en une expérience exceptionnelle et sans souci.
             </p>
             <p className="mt-4 text-muted-foreground">
              De la billetterie à l'hébergement, notre équipe d'experts est dédiée à la création de voyages sur mesure, répondant à vos besoins avec professionnalisme et une connaissance approfondie du secteur.

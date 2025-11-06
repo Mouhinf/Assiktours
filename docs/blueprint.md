@@ -1,4 +1,4 @@
-# **App Name**: Relax Voyages Explorer
+# **App Name**: Assirik Tours Explorer
 
 ## Core Features:
 

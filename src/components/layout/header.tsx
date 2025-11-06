@@ -36,7 +36,7 @@ export default function Header() {
       <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2">
             <GlobeIcon className="h-6 w-6 text-primary" />
-          <span className="font-bold text-lg text-primary">Relax Voyages</span>
+          <span className="font-bold text-lg text-primary">Assirik Tours</span>
         </Link>
 
         <nav className="hidden md:flex gap-6">
@@ -75,7 +75,7 @@ export default function Header() {
               <div className="grid gap-6 p-6">
                 <Link href="/" className="flex items-center gap-2">
                    <GlobeIcon className="h-6 w-6 text-primary" />
-                  <span className="font-bold text-lg text-primary">Relax Voyages</span>
+                  <span className="font-bold text-lg text-primary">Assirik Tours</span>
                 </Link>
                 <nav className="grid gap-4">
                   {navLinks.map((link) => (

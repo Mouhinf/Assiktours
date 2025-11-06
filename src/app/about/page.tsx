@@ -7,7 +7,7 @@ const whyUs = [
   {
     icon: <Users className="h-8 w-8 text-primary" />,
     title: "Plus de 20 ans d'expérience",
-    description: "Relax Voyages bénéficie de plus de 20 ans d'expérience dans le secteur du voyage et du tourisme, vous assurant un service expert et fiable.",
+    description: "Assirik Tours bénéficie de plus de 20 ans d'expérience dans le secteur du voyage et du tourisme, vous assurant un service expert et fiable.",
   },
   {
     icon: <Award className="h-8 w-8 text-primary" />,
@@ -25,7 +25,7 @@ const companyInfo = [
   {
     icon: <Building className="h-10 w-10 text-primary" />,
     title: 'Notre Histoire',
-    description: "Relax Voyages est une agence de voyages établie à Dakar, Sénégal, bénéficiant de plus de 20 ans d'expérience dans le secteur du voyage et du tourisme.",
+    description: "Assirik Tours est une agence de voyages établie à Dakar, Sénégal, bénéficiant de plus de 20 ans d'expérience dans le secteur du voyage et du tourisme.",
   },
   {
     icon: <Target className="h-10 w-10 text-primary" />,
@@ -46,9 +46,9 @@ export default function AboutPage() {
       <main className="flex-grow">
         <section className="py-16 sm:py-24 bg-primary/5">
           <div className="container mx-auto max-w-7xl px-4 text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-primary">À Propos de Relax Voyages</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-primary">À Propos de Assirik Tours</h1>
             <p className="mt-4 text-lg text-secondary-foreground max-w-3xl mx-auto">
-              Découvrez comment notre expérience et notre engagement font de Relax Voyages votre partenaire idéal pour des voyages sereins et mémorables.
+              Découvrez comment notre expérience et notre engagement font de Assirik Tours votre partenaire idéal pour des voyages sereins et mémorables.
             </p>
           </div>
         </section>
@@ -65,13 +65,13 @@ export default function AboutPage() {
                 />
               </div>
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-primary">Voyagez en toute sérénité avec Relax Voyages</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-primary">Voyagez en toute sérénité avec Assirik Tours</h2>
                 <div className="mt-4 text-lg text-muted-foreground space-y-4">
                   <p>
-                  Relax Voyages est une agence de voyages établie à Dakar, Sénégal, bénéficiant de plus de 20 ans d'expérience dans le secteur du voyage et du tourisme. Elle est officiellement agréée par l'Association Internationale du Transport Aérien (IATA) et détient une licence délivrée par le Ministère du Tourisme sénégalais, garantissant ainsi son sérieux et sa conformité aux normes du secteur.
+                  Assirik Tours est une agence de voyages établie à Dakar, Sénégal, bénéficiant de plus de 20 ans d'expérience dans le secteur du voyage et du tourisme. Elle est officiellement agréée par l'Association Internationale du Transport Aérien (IATA) et détient une licence délivrée par le Ministère du Tourisme sénégalais, garantissant ainsi son sérieux et sa conformité aux normes du secteur.
                   </p>
                   <p>
-                  L'agence propose une gamme complète de services pour répondre aux besoins des voyageurs, incluant la billetterie aérienne, le tourisme religieux, les transferts vers et depuis l'aéroport international Blaise Diagne (AIBD), la location de voitures, ainsi que des solutions d'hébergement en hôtels et résidences meublées. Relax Voyages fait également partie du groupe Aviation Handling-Relax Voyages, ce qui renforce son expertise dans le domaine du voyage et de la logistique.
+                  L'agence propose une gamme complète de services pour répondre aux besoins des voyageurs, incluant la billetterie aérienne, le tourisme religieux, les transferts vers et depuis l'aéroport international Blaise Diagne (AIBD), la location de voitures, ainsi que des solutions d'hébergement en hôtels et résidences meublées. Assirik Tours fait également partie du groupe Aviation Handling-Assirik Tours, ce qui renforce son expertise dans le domaine du voyage et de la logistique.
                   </p>
                   <p>
                   Située à Dakar, à proximité de l'Hôpital Philippe Senghor, l'agence se distingue par son engagement à offrir des prestations personnalisées et adaptées aux exigences de sa clientèle, aussi bien locale qu’internationale. Pour le contact, elle est joignable au +221 77 184 57 57 et dispose de plateformes digitales pour faciliter l'accès à ses services.

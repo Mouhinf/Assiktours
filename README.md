@@ -1,9 +1,9 @@
-Ce projet est la réalisation d'un site internet s'appelant Relax Voyages.
-# relax-voyages
-# relax-voyage
-# relax-voyage
-# relax-voyage
-# Relax-voyages
-# RelaxVoyages
-# RelaxVoyages
-# RelaxVoyages
+Ce projet est la réalisation d'un site internet s'appelant Assirik Tours.
+# Assirik-Tours
+# Assirik-voyage
+# Assirik-voyage
+# Assirik-voyage
+# Assirik-Tours
+# AssirikVoyages
+# AssirikVoyages
+# AssirikVoyages

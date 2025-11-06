@@ -32,7 +32,7 @@ export default function Footer() {
       <div className="container mx-auto max-w-7xl px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-secondary-foreground">
           <div>
-            <h3 className="text-lg font-semibold text-primary">Relax Voyages</h3>
+            <h3 className="text-lg font-semibold text-primary">Assirik Tours</h3>
             <p className="mt-2 text-sm">Votre passeport pour des voyages sereins.</p>
           </div>
           <div>
@@ -69,7 +69,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t border-border pt-6 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Relax Voyages. Tous droits réservés.</p>
+          <p>&copy; {new Date().getFullYear()} Assirik Tours. Tous droits réservés.</p>
         </div>
       </div>
     </footer>
