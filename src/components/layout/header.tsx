@@ -10,7 +10,6 @@ const navLinks = [
   { href: '/', label: 'Accueil' },
   { href: '/services', label: 'Services' },
   { href: '/destinations', label: 'Destinations' },
-  { href: '/vehicles', label: 'Ventes et Location de véhicules' },
   { href: '/contact', label: 'Contact' },
   { href: '/about', label: 'À propos' },
 ];
