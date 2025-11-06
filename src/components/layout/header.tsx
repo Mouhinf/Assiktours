@@ -3,13 +3,14 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu, Send, Globe } from 'lucide-react';
+import { Menu, Send, Bot } from 'lucide-react'; // Added Bot icon
 import { QuoteRequestDialog } from './quote-request-dialog';
 
 const navLinks = [
   { href: '/', label: 'Accueil' },
   { href: '/services', label: 'Services' },
   { href: '/destinations', label: 'Destinations' },
+  { href: '/assistant', label: 'Assistant IA' }, // New link
   { href: '/contact', label: 'Contact' },
   { href: '/about', label: 'À propos' },
 ];

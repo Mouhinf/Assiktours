@@ -2,7 +2,6 @@
 
 import { useState, useRef, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import { Input } from '@/components/ui/input';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Bot, Send, User, Loader2 } from 'lucide-react';
@@ -14,7 +13,6 @@ interface Message {
 }
 
 export function AIAssistant() {
-  const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -65,86 +63,72 @@ export function AIAssistant() {
   };
 
   return (
-    <>
-      <Sheet open={isOpen} onOpenChange={setIsOpen}>
-        <SheetTrigger asChild>
-          <Button
-            size="icon"
-            className="fixed bottom-6 right-6 h-14 w-14 rounded-full shadow-lg z-50"
-          >
-            <Bot className="h-7 w-7" />
-            <span className="sr-only">Ouvrir l'assistant IA</span>
-          </Button>
-        </SheetTrigger>
-        <SheetContent className="flex flex-col">
-          <SheetHeader>
-            <SheetTitle>Assistant de Voyage IA</SheetTitle>
-          </SheetHeader>
-          <ScrollArea className="flex-grow my-4 pr-4" ref={scrollAreaRef}>
-            <div className="space-y-4">
+    <div className="flex flex-col h-full max-h-[calc(100vh-120px)]"> {/* Adjusted height for full page */}
+      <div className="flex-grow my-4 pr-4">
+        <ScrollArea className="h-full" ref={scrollAreaRef}>
+          <div className="space-y-4 p-4">
+            <div className="flex items-start gap-3">
+              <div className="p-2 bg-primary rounded-full text-primary-foreground">
+                <Bot className="h-5 w-5" />
+              </div>
+              <div className="bg-muted p-3 rounded-lg max-w-[80%]">
+                <p className="text-sm">Bonjour ! Comment puis-je vous aider à planifier votre prochain voyage avec Assirik Tours ?</p>
+              </div>
+            </div>
+            {messages.map((message, index) => (
+              <div
+                key={index}
+                className={cn(
+                  'flex items-start gap-3',
+                  message.role === 'user' ? 'justify-end' : 'justify-start'
+                )}
+              >
+                {message.role === 'assistant' && (
+                  <div className="p-2 bg-primary rounded-full text-primary-foreground">
+                    <Bot className="h-5 w-5" />
+                  </div>
+                )}
+                <div
+                  className={cn(
+                    'p-3 rounded-lg max-w-[80%]',
+                    message.role === 'user'
+                      ? 'bg-primary text-primary-foreground'
+                      : 'bg-muted'
+                  )}
+                >
+                  <p className="text-sm">{message.content}</p>
+                </div>
+                 {message.role === 'user' && (
+                  <div className="p-2 bg-muted rounded-full text-foreground">
+                    <User className="h-5 w-5" />
+                  </div>
+                )}
+              </div>
+            ))}
+            {isLoading && (
               <div className="flex items-start gap-3">
                 <div className="p-2 bg-primary rounded-full text-primary-foreground">
                   <Bot className="h-5 w-5" />
                 </div>
-                <div className="bg-muted p-3 rounded-lg max-w-[80%]">
-                  <p className="text-sm">Bonjour ! Comment puis-je vous aider à planifier votre prochain voyage avec Assirik Tours ?</p>
+                <div className="bg-muted p-3 rounded-lg">
+                  <Loader2 className="h-5 w-5 animate-spin" />
                 </div>
               </div>
-              {messages.map((message, index) => (
-                <div
-                  key={index}
-                  className={cn(
-                    'flex items-start gap-3',
-                    message.role === 'user' ? 'justify-end' : 'justify-start'
-                  )}
-                >
-                  {message.role === 'assistant' && (
-                    <div className="p-2 bg-primary rounded-full text-primary-foreground">
-                      <Bot className="h-5 w-5" />
-                    </div>
-                  )}
-                  <div
-                    className={cn(
-                      'p-3 rounded-lg max-w-[80%]',
-                      message.role === 'user'
-                        ? 'bg-primary text-primary-foreground'
-                        : 'bg-muted'
-                    )}
-                  >
-                    <p className="text-sm">{message.content}</p>
-                  </div>
-                   {message.role === 'user' && (
-                    <div className="p-2 bg-muted rounded-full text-foreground">
-                      <User className="h-5 w-5" />
-                    </div>
-                  )}
-                </div>
-              ))}
-              {isLoading && (
-                <div className="flex items-start gap-3">
-                  <div className="p-2 bg-primary rounded-full text-primary-foreground">
-                    <Bot className="h-5 w-5" />
-                  </div>
-                  <div className="bg-muted p-3 rounded-lg">
-                    <Loader2 className="h-5 w-5 animate-spin" />
-                  </div>
-                </div>
-              )}
-            </div>
-          </ScrollArea>
-          <form onSubmit={handleSubmit} className="flex gap-2 border-t pt-4">
-            <Input
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              placeholder="Posez votre question..."
-              disabled={isLoading}
-            />
-            <Button type="submit" size="icon" disabled={isLoading}>
-              <Send className="h-4 w-4" />
-            </Button>
-          </form>
-        </SheetContent>
-      </Sheet>
-    </>
+            )}
+          </div>
+        </ScrollArea>
+      </div>
+      <form onSubmit={handleSubmit} className="flex gap-2 border-t pt-4 p-4">
+        <Input
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          placeholder="Posez votre question..."
+          disabled={isLoading}
+        />
+        <Button type="submit" size="icon" disabled={isLoading}>
+          <Send className="h-4 w-4" />
+        </Button>
+      </form>
+    </div>
   );
 }
